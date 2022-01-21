@@ -15,6 +15,7 @@ provider "aws" {
 }
 
  #text
+#test23
 
 resource "aws_instance" "app_server" {
   ami           = "ami-830c94e3"
