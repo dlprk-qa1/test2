@@ -4,8 +4,9 @@ resource "aws_s3_bucket" "publicaccess" {
   versioning {
     enabled = true
   }
-  logging {
+  logging {    
     target_bucket = aws_s3_bucket.log_bucket.id
     target_prefix = "log/"
     }
 }
+
