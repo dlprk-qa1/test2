@@ -1,0 +1,19 @@
+{
+"Resources" : {
+ "MyEC2Instance" : {
+   "Type" : "AWS::EC2::Instance",
+   "Properties" : {
+      "ImageId" : "ami-79fd7eee",
+      "KeyName" : "testkey",
+      "AvailabilityZone" : {
+         "Fn::Select" : [ 
+           "0", 
+           { 
+             "Fn::GetAZs" : "" 
+           } 
+         ]
+       }
+   }
+}
+}
+}
