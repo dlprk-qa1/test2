@@ -1,0 +1,28 @@
+# https://github.com/kubernetes/examples/blob/master/staging/podsecuritypolicy/rbac/policies.yaml
+# https://cheatsheet.dennyzhang.com/kubernetes-yaml-templates
+apiVersion: policy/v1beta1
+kind: PodSecurityPolicy
+metadata:
+  name: privileged
+  annotations: 
+   zpc-skip-policy: "ZS-AWS-0001,ZS-AWS-002,ZS-AWS-009:testing"
+spec:
+  fsGroup:
+    rule: RunAsAny123
+  privileged: true
+  runAsUser:
+    rule: RunAsAny
+  seLinux:
+    rule: RunAsAny
+  supplementalGroups:
+    rule: RunAsAny
+  volumes:
+  - '*'
+  allowedCapabilities:
+  - '*'
+  hostPID: true
+  hostIPC: true
+  hostNetwork: true
+  hostPorts:
+  - min: 1
+    max: 65536
