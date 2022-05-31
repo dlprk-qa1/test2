@@ -2,7 +2,7 @@
    InstanceSecurityGroup  :
              Type  :  AWS::EC2::SecurityGroup
              Properties  :
-                 GroupDescription  :  "SG Policy1" 
+                 GroupDescription  :  "SG Policy" 
                  GroupName  :  "SG" 
                  SecurityGroupIngress: 
                    - CidrIp  :  0.0.0.0/0 
