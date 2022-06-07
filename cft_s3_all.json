@@ -1,0 +1,23 @@
+{
+"Resources":{
+  "S3Bucket":{
+    "Type": "AWS::S3::Bucket",
+    "Properties":{
+      "AccessControl": "PublicReadWrite",
+      "VersioningConfiguration":{
+        "Status": "Suspended"
+      },
+      "WebsiteConfiguration":{
+        "IndexDocument": "index.html",
+        "ErrorDocument": "error.html"
+  },
+      "PublicAccessBlockConfiguration": {
+        "BlockPublicAcls": false,
+        "BlockPublicPolicy": false,
+        "IgnorePublicAcls": false,
+        "RestrictPublicBuckets": false
+      }
+}
+}
+}
+}
