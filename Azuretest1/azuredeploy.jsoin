@@ -17,7 +17,7 @@
         "existingContainerSubnetName": {
             "type": "string",
             "metadata": {
-                "description": "Name of the subnet to use for cloud shell containers."
+                "description": "Name of the subnet to use for cloud shell containers..."
             }
         },
         "storageAccountName": {
