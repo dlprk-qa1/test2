@@ -1,7 +1,8 @@
 # Starter pipeline
 
-pool:
-  vmImage: ubuntu-latest
+pool: Default
+#pool:
+#  vmImage: ubuntu-latest
 
 steps:
 - script: echo Hello, world!
