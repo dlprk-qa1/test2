@@ -11,13 +11,13 @@
         "existingStorageSubnetName": {
             "type": "string",
             "metadata": {
-                "description": "Name of the subnet to use for storage account."
+                "description": "Name of the subnet to use for storage account.",
             }
         },
         "existingContainerSubnetName": {
             "type": "string",
             "metadata": {
-                "description": "Name of the subnet to use for cloud shell containers."
+                "description": "Name of the subnet to use for cloud shell containers.",
             }
         },
         "storageAccountName": {
