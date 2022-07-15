@@ -7,4 +7,3 @@ resource "aws_instance" "app_server2" {
     Name = "ExampleAppServerInstance"
   }
 }
-#test1
