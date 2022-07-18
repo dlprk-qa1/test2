@@ -1,0 +1,19 @@
+apiVersion: policy/v1	
+kind: PodSecurityPolicy
+metadata:
+  name: privileged
+  annotations: 
+spec:
+  fsGroup:
+    rule: RunAsAny
+  privileged: true
+  allowPrivilegeEscalation: true
+  requiredDropCapabilities: None
+  runAsUser:
+    rule: RunAsAny
+  hostPID: true
+  hostIPC: true
+  hostNetwork: true
+  hostPorts:
+  - min: 1
+    max: 65536
