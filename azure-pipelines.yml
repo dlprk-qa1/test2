@@ -10,13 +10,13 @@ steps:
 
 - task: ZscalerIaCScan@0
   inputs:
-    region: 'CUSTOM'
+    region: 'US'
     failBuild: true
-    clientId: 'sTfzX3UQZJ1rNcTplacWdYgRoasDO0Sr'
-    clientSecret: 'CdT8ctkb-OsW_7Ci1P7stlYoH0m4ewb-2z4wobqpsXEZMUnVCrotFWwzwvTzcZ6T'  
-  env:
-    AUTH_URL: "https://int-auth.zscwp.io"
-    API_URL: "https://int.api.zscwp.io"       
+    clientId: 'pzgnqvelWDdsIknylsAQ5JvhDJnjBSFK'
+    clientSecret: 'lMdWiy3u4dxV3SUsjxhhq0H1JwftNF9UWdX3GqM44Tl0GA1-hJ5TbiVrEagkMF43'  
+  #env:
+  #  AUTH_URL: "https://int-auth.zscwp.io"
+  #  API_URL: "https://int.api.zscwp.io"       
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
