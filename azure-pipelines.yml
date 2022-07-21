@@ -8,7 +8,7 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- task: ZscalerIaCScan@0
+- task: ZscalerIaCScan@1
   inputs:
     region: 'US'
     failBuild: true
