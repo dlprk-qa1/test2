@@ -12,8 +12,8 @@ steps:
   inputs:
     region: 'US'
     failBuild: true
-    clientId: 'pzgnqvelWDdsIknylsAQ5JvhDJnjBSFK'
-    clientSecret: 'lMdWiy3u4dxV3SUsjxhhq0H1JwftNF9UWdX3GqM44Tl0GA1-hJ5TbiVrEagkMF43'  
+    clientId: 'u6HD1OeS7aYs3lHAYsoQmCVTQlhAHj3N'
+    clientSecret: 'M79RK_VX_wZIg-_ZA68-uP79UsZS0YQyYe8GZP_XsTfEpfNNLZ5m9CQ5dPF2BswY'  
   #env:
   #  AUTH_URL: "https://int-auth.zscwp.io"
   #  API_URL: "https://int.api.zscwp.io"       
