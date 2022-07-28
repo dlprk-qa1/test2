@@ -15,7 +15,7 @@ provider "aws" {
 
  #text
  
-resource "aws_instance" "app_server" {
+resource "aws_instance" "app_server1" {
   ami           = trim("?!hello?!", "!?")
   count         = ceil(2.3)
    
