@@ -8,3 +8,8 @@ resource "aws_instance" "app_server1" {
   }
 }
 #test1
+
+module "vpc_example_complete-vpc" {
+  source  = "terraform-aws-modules/vpc/aws//examples/complete-vpc"
+  version = "3.14.4"
+}
