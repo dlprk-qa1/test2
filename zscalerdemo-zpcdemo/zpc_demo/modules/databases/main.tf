@@ -27,7 +27,7 @@ resource "aws_dynamodb_table" "safemarch-dynamodb-table" {
 
 ##### Redshift:
 
-resource "aws_redshift_cluster" "safemarch-redshift" {
+resource "aws_redshift_cluster" "safemarch-redshift2" {
   cluster_identifier = "safemarch-redshift-cardprocessing-dev"
   database_name      = "safemarch_cards_processing_db"
   master_username    = "safemarchadmin"
