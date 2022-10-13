@@ -42,7 +42,7 @@ resource "aws_default_vpc" "default" {
 }
 
 
-resource "aws_ecr_repository" "card-processing-container-repo" {
+resource "aws_ecr_repository" "card-processing-container-repo1" {
   name                 = "ecrrepo-cardprocessing-dev-${data.aws_region.current.name}"
   image_tag_mutability = "MUTABLE"
 
