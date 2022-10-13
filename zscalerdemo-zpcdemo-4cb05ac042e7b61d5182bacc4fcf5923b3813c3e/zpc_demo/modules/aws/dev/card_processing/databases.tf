@@ -38,7 +38,7 @@ resource "aws_redshift_cluster" "safemarch-redshift" {
 
 ##### MySql:
 
-resource "aws_db_instance" "safemarch-mysql" {
+resource "aws_db_instance" "safemarch-mysql1" {
   allocated_storage    = 10
   identifier           = "safemarch-cardprocessing-cards"
   engine               = "mysql"
