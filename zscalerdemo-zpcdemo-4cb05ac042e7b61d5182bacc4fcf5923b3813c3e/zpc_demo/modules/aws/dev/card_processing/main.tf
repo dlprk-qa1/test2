@@ -42,7 +42,7 @@ resource "aws_default_vpc" "default" {
 }
 
 
-resource "aws_ecr_repository" "card-processing-container-repo" {
+resource "aws_ecr_repository" "card-processing-container-repo1" {
   name                 = "ecrrepo-cardprocessing-dev-${data.aws_region.current.name}"
   image_tag_mutability = "MUTABLE"
 
@@ -84,7 +84,7 @@ resource "aws_iam_instance_profile" "storage-access-profile" {
 }
 
 
-resource "aws_iam_role_policy" "storage-access-policy" {
+resource "aws_iam_role_policy" "storage-access-policy1" {
   name = "storage-access-policy"
   role = "${aws_iam_role.machine-storage-access.id}"
 
