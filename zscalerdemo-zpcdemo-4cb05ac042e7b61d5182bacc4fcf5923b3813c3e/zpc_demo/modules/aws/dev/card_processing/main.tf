@@ -84,7 +84,7 @@ resource "aws_iam_instance_profile" "storage-access-profile" {
 }
 
 
-resource "aws_iam_role_policy" "storage-access-policy" {
+resource "aws_iam_role_policy" "storage-access-policy1" {
   name = "storage-access-policy"
   role = "${aws_iam_role.machine-storage-access.id}"
 
