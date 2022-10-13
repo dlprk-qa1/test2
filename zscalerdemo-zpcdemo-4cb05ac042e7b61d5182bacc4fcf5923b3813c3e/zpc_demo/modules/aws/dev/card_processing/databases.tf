@@ -27,7 +27,7 @@ resource "aws_dynamodb_table" "safemarch-dynamodb-table" {
 
 ##### Redshift:
 
-resource "aws_redshift_cluster" "safemarch-redshift" {
+resource "aws_redshift_cluster" "safemarch-redshift1" {
   cluster_identifier = "safemarch-redshift-cardprocessing-dev"
   database_name      = "safemarch_cards_processing_db"
   master_username    = "safemarchadmin"
@@ -63,7 +63,7 @@ resource "aws_elasticache_cluster" "safemarch-cache" {
 
 ##### Neptune:
 
-resource "aws_neptune_cluster" "safemarch-neptune" {
+resource "aws_neptune_cluster" "safemarch-neptune1" {
   cluster_identifier                  = "safemarch-cardprocessing-neptune-cluster"
   engine                              = "neptune"
   backup_retention_period             = 5
