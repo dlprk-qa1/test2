@@ -1,6 +1,6 @@
 data "aws_availability_zones" "available" {}
 
-resource "aws_autoscaling_group" "autoscaling-frontend" {
+resource "aws_autoscaling_group" "autoscaling-frontend1" {
   name                      = "cardprocessing-dev-frontend-autoscaling"
   max_size                  = 2
   min_size                  = 1
