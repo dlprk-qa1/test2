@@ -63,7 +63,7 @@ resource "aws_elasticache_cluster" "safemarch-cache" {
 
 ##### Neptune:
 
-resource "aws_neptune_cluster" "safemarch-neptune" {
+resource "aws_neptune_cluster" "safemarch-neptune1" {
   cluster_identifier                  = "safemarch-cardprocessing-neptune-cluster"
   engine                              = "neptune"
   backup_retention_period             = 5
