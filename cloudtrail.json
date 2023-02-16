@@ -1,0 +1,46 @@
+{
+    "Resources": {
+        "Trail": {
+            "Type": "AWS::CloudTrail::Trail",
+            "Properties": {
+                "EnableLogFileValidation": false,
+                "IncludeGlobalServiceEvents": false,
+                "IsMultiRegionTrail": false,
+                "CloudWatchLogsLogGroupArn": {
+                    "Fn::ImportValue": "TrailLogGroupTestArn"
+                },
+                "CloudWatchLogsRoleArn": {
+                    "Fn::ImportValue": "TrailLogGroupRoleTestArn"
+                },
+                "KMSKeyId": {
+                    "Fn::ImportValue": "TrailKeyTest"
+                },
+               "Tags": [
+                 {  
+                    "Key": "TagKeyIntTest2",
+                    "Value": "TagValueIntTest2"
+                    }
+                ],
+                "SnsTopicName": {
+                    "Fn::ImportValue": "TrailTopicTest"
+                },
+                "EventSelectors": [
+                    {
+                        "DataResources": [
+                            {
+                                "Type": "AWS::S3::Object",
+                                "Values": [
+                                    {
+                                        "Fn::Sub": "arn:${AWS::Partition}:s3"
+                                    }
+                                ]
+                            }
+                        ],
+                        "IncludeManagementEvents": true,
+                        "ReadWriteType": "All"
+                    }
+                ]
+            }
+        }
+    }
+}
