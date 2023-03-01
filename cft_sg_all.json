@@ -1,6 +1,6 @@
 {
 "Resources":{
-     "InstanceSecurityGroup1" : {
+     "InstanceSecurityGroup123" : {
             "Type" : "AWS::EC2::SecurityGroup",
             "Properties" : {
                 "GroupDescription" : "String",
