@@ -1,7 +1,7 @@
 apiVersion: policy/v1	
 kind: PodSecurityPolicy
 metadata:
-  name: privileged1
+  name: privileged123
 spec:
   fsGroup:
     rule: RunAsAny
